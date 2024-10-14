@@ -58,45 +58,64 @@
       </div>
     </header>
 
-    <main>
-      <div class="main-content container">
-        <div class="categories-filter">
-          <ul class="filters-list">
-            <li>
-              <a href="#">Woman</a>
-            </li>
-            <li>
-              <a href="#">man</a>
-            </li>
-            <li>
-              <a href="#">man</a>
-            </li>
-            <li>
-              <a href="#">man</a>
-            </li>
-            <li>
-              <a href="#">man</a>
-            </li>
-            <li>
-              <a href="#">man</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="product-banner">
-          <div class="text-section">
-            <div class="iphone-series">
-              <img src="images/apple-icon.svg" alt="apple" />
-              <h2>iPhone 14 Series</h2>
-            </div>
-
-            <h1>Up to 10% off Voucher</h1>
-          </div>
-          <div class="image-section">
-            <img src="images/main-img.png" alt="apple 14" />
-          </div>
-        </div>
+    <section class="sign-up-section">
+      <div class="form-header">
+        <h2 class="premium">Premium</h2>
+        <h2 class="price">$199/<span class="text-sm">month</span></h2>
       </div>
-    </main>
+      <p class="desc">Faster Instagram Growth</p>
+      <form action="#" class="sign-up-form">
+        <input type="email" placeholder="Email" required class="input" />
+        <input
+          type="text"
+          placeholder="Cardholder Name"
+          required
+          class="input"
+        />
+        <input
+          type="text"
+          placeholder="Card Number"
+          required
+          class="input input-card-number"
+        />
+
+        <div class="date-and-cvv">
+          <input
+            type="text"
+            placeholder="Date"
+            required
+            class="input date-input"
+          />
+          <input
+            type="text"
+            placeholder="CVV"
+            required
+            class="input cvv-input"
+          />
+        </div>
+
+        <select name="country" class="select-country input">
+          <option value="default" class="opt-1">Country</option>
+          <option value="georgia">Georgia</option>
+          <option value="usa">USA</option>
+          <option value="italy">Italy</option>
+        </select>
+
+        <p>
+          I accept the
+          <span class="highlighted"><a href="#">Terms of Service</a></span> and
+          Privacy Policy
+        </p>
+
+        <!--<div class="card-number-section">
+          <input type="text" placeholder="Card Number" required class="input" />
+          <img src="images/card.svg" alt="" class="card-icon"/>
+        </div>-->
+
+        <button type="submit" class="submit-btn">
+          Get started | $199 <span class="btn-highlighted">$249</span>
+        </button>
+      </form>
+    </section>
   </body>
 </html>

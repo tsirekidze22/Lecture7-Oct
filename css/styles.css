@@ -188,3 +188,128 @@ header {
   font-weight: bold;
   line-height: 60px;
 }
+
+/* Sign Up Page */
+.sign-up-section {
+  width: 552px;
+  height: 832px;
+  border-radius: 32px;
+  margin: 100px auto 0px auto;
+  padding: 30px 64px 10px 64px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.premium,
+.price {
+  color: #212628;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.premium {
+  line-height: 48px;
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+.desc {
+  color: #212628;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+.sign-up-form {
+  margin-top: 43px;
+}
+
+.input {
+  width: 100%;
+  height: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 0px 54px 0px 24px;
+  outline: none;
+  margin-bottom: 27px;
+}
+
+.input-card-number {
+  background-image: url("../images/card.svg");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+}
+
+.date-and-cvv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-input {
+  width: 282px;
+}
+
+.cvv-input {
+  width: 120px;
+}
+
+.select-country {
+  width: 282px;
+  display: block;
+  appearance: none;
+  background-image: url("../images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 23px center;
+  cursor: pointer;
+}
+
+.highlighted a {
+  color: #e1306c;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  margin-top: 29px;
+  width: 370px;
+  border: none;
+  height: 64px;
+  border-radius: 32px;
+  cursor: pointer;
+  background: linear-gradient(
+    to left,
+    #c23584 0%,
+    #e2306c 24%,
+    #f77736 84%,
+    #fa963e 100%
+  );
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-highlighted {
+  color: #fff;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/*.card-number-section {
+  height: 54px;
+  position: relative;
+}
+
+.card-icon {
+  position: absolute;
+  top: 17px;
+  right: 25px;
+}*/
