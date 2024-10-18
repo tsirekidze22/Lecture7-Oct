@@ -152,7 +152,6 @@ header {
 .product-banner {
   width: 892px;
   height: 344px;
-  border: 1px solid green;
   margin-top: 40px;
   background-color: #000;
   color: #fff;
@@ -278,6 +277,32 @@ header {
   text-decoration: underline;
 }
 
+.desc::after {
+  content: "after text";
+  color: #e1306c;
+}
+
+.desc::before {
+  content: "before text";
+  color: #e1306c;
+}
+
+.checkbox-input {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checkbox-input:checked::before {
+  content: url("../images/checkmark.svg");
+}
+
 .submit-btn {
   margin-top: 29px;
   width: 370px;
@@ -303,13 +328,99 @@ header {
   opacity: 0.6;
 }
 
-/*.card-number-section {
-  height: 54px;
-  position: relative;
+.featured {
+  height: 600px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.card-icon {
+.card-wrapper {
+  color: #fff;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.playstation-wrapper {
+  width: 570px;
+  height: 600px;
+  background-image: url("../images/playstation.png");
+  background-color: #000;
+  background-position: 29px 89px;
+}
+
+.playstation-text {
   position: absolute;
-  top: 17px;
-  right: 25px;
-}*/
+  left: 32px;
+  bottom: 32px;
+  width: 242px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.card-desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 16px 0px;
+}
+
+.card-link {
+  color: #fff;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.card-link::after {
+  content: "";
+  height: 1px;
+  width: 81px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: #8b8b8b;
+}
+
+.featured-right-section {
+  width: 570px;
+  height: 600px;
+}
+
+.womens-collection-wrapper {
+  width: 570px;
+  height: 284px;
+  background-image: url("../images/women-collection.png");
+  background-color: #0d0d0d;
+  background-position-x: 138px;
+}
+
+.womens-collection-text {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  width: 255px;
+}
+
+.speakers-and-perfume {
+  width: 570px;
+  height: 284px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.speakers-wrapper {
+  width: 270px;
+  height: 284px;
+  background-image: url("../images/speakers.png");
+  background-color: #000;
+  background-position: center;
+}
+.speakers-text {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+}
